@@ -29,7 +29,7 @@
       align-items: center;
       justify-content: center;
 
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg');
+      background-image: url('https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg');
       background-position: center;
       background-size: cover;
     }
@@ -87,7 +87,7 @@
 </head>
 
 <body>
-  <div calss="mytitle">
+  <div class="mytitle">
     <h1>내 생의 최고의 영화들</h1>
     <button>영화기록하기</button>
   </div>
@@ -97,6 +97,18 @@
         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
         <label for="floatingInput">영화 URL</label>
       </div>
+
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">별점</label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option selected>선택하기</option>
+          <option value="1">⭐</option>
+          <option value="2">⭐⭐</option>
+          <option value="3">⭐⭐⭐</option>
+        </select>
+      </div>
+
+
       <form class="form-floating">
         <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com"
           value="">
